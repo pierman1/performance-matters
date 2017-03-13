@@ -9,6 +9,6 @@ Requests:   18
 
 ## To do
 
-![alt text](https://github.com/pierman1/performance-matters/images/audit.png "Audit")
+![alt text](https://github.com/pierman1/performance-matters/week-1/images/audit.png "Audit")
 
 
