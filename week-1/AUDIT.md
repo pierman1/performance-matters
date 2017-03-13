@@ -7,8 +7,13 @@ Tested on:  2G connection (150ms, 450kb/s, 150kb/s)
 Load:       23.36s
 Requests:   18
 
+![alt text](images/captured.png "Audit")
+
+![alt text](images/requests.png "Audit")
+
 ## To do
 
-![alt text](https://github.com/pierman1/performance-matters/blob/master/week-1/images/audits.png "Audit")
+
+
 
 
