@@ -12,7 +12,7 @@ Tested on:  2G connection (150ms, 450kb/s, 150kb/s)
 
 ### After image optimization
 
-- Load:       23.36s
+- Load:       14.60s
 - Requests:   18
 
 ![alt text](screenshots/2.optimized-images.png "Audit")
@@ -20,15 +20,18 @@ Tested on:  2G connection (150ms, 450kb/s, 150kb/s)
 
 ### After adding GZIP
 
+- Load:       9.19s
+- Requests:   18
+
 ![alt text](screenshots/4.shots.png "Audit")
 ![alt text](screenshots/3.gzip.png "Audit")
 
 
-![alt text](screenshots/requests.png "Audit")
-
 ## To do
 
 - Font
+- reduce js files?
+
 
 
 

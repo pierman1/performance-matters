@@ -5,14 +5,31 @@
     <link href="/dist/css/fonts.css" rel="stylesheet">
     <link href="/dist/css/bootstrap.css" rel="stylesheet">
     <link href="/assets/css/src/docs.css" rel="stylesheet">
-    {% block head_extra %}{% endblock %}
     <script src="/assets/js/vendor/jquery.min.js" defer></script>
     <script src="/dist/js/bootstrap.js" defer></script>
     <script src="/assets/js/docs.min.js" defer></script>
-    <script src="/assets/js/ie10-viewport-bug-workaround.js" defer></script>
+    {% block head_extra %}{% endblock %}
+
 </head>
 <body {% block body_attributes %}{% endblock %}>
-{% block body %}{% endblock %}
-{% block scripts_extra %}{% endblock %}
+
+    <script>
+        console.log('hello wiorld');
+    </script>
+
+    <script src="/assets/js/vendor/fontfaceobserver.js"></script>
+
+    <script>
+        var font = new FontFaceObserver('source_sans_pro');
+        console.log(font);
+
+        font.load().then(function () {
+            console.log('Font is available');
+            document.documentElement.className += ' fonts-loaded';
+        });
+
+    </script>
+
+{% block body %}{% endblock %}{% block scripts_extra %}{% endblock %}
 </body>
 </html>
