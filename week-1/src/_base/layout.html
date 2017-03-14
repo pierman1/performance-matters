@@ -1,18 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     {% include './app-meta.html' %}
-    <link href="/dist/css/fonts.css" rel="stylesheet">
-    <link href="/dist/css/bootstrap.css" rel="stylesheet">
-    <link href="/assets/css/src/docs.css" rel="stylesheet">
+
+    <link href="./dist/css/docs.min.css" rel="stylesheet">
+    <link href="./dist/css/docs.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    <style>{% include '../dist/css/critical.css' %}</style>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" defer></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" defer></script>
+    <script src="https://maxcdn.bootstrapcdn.com/js/ie10-viewport-bug-workaround.js" defer></script>
+
+
     {% block head_extra %}{% endblock %}
-    <script src="/assets/js/vendor/jquery.min.js" defer></script>
-    <script src="/dist/js/bootstrap.js" defer></script>
-    <script src="/assets/js/docs.min.js" defer></script>
-    <script src="/assets/js/ie10-viewport-bug-workaround.js" defer></script>
 </head>
+
 <body {% block body_attributes %}{% endblock %}>
-{% block body %}{% endblock %}
-{% block scripts_extra %}{% endblock %}
+
+<script src="/assets/js/vendor/fontfaceobserver.js"></script>
+<script>
+    var font = new FontFaceObserver('source_sans_pro');
+    font.load(9000).then(function () {
+        document.documentElement.className += ' fonts-loaded';
+    });
+</script>
+
+{% block body %}{% endblock %} {% block scripts_extra %}{% endblock %}
 </body>
+
 </html>

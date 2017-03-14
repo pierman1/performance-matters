@@ -10,13 +10,20 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "gulp-clean-css": "^3.0.3",
+    "gulp-concat": "^2.6.1",
+    "gulp-concat-css": "^2.3.0",
+    "gulp-critical-css": "^1.0.1",
+    "gulp-responsive": "^2.7.0",
+    "gulp-responsive-images": "0.0.3",
     "ngrok": "2.2.6",
     "nodemon": "1.11.0"
   },
   "dependencies": {
-    "compression": "^1.6.2",
     "body-parser": "1.15.2",
+    "compression": "^1.6.2",
     "express": "4.14.0",
+    "file-system": "^2.2.2",
     "nunjucks": "3.0.0"
   }
 }
