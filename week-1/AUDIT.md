@@ -12,7 +12,7 @@ Tested on:  2G connection (150ms, 450kb/s, 150kb/s)
 
 ### After image optimization
 
-- Load:       23.36s
+- Load:       14.60s
 - Requests:   18
 
 ![alt text](screenshots/2.optimized-images.png "Audit")
