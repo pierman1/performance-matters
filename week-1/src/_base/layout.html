@@ -6,29 +6,20 @@
 
     <style>{% include '../dist/css/critical.css' %}</style>
 
-
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" defer></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" defer></script>
-    <!--<script src="https://maxcdn.bootstrapcdn.com/js/ie10-viewport-bug-workaround.js" defer></script>-->
+    <script src="./assets/js/vendor/fontfaceobserver.js" defer></script>
 
     {% block head_extra %}{% endblock %}
 </head>
 
 <body {% block body_attributes %}{% endblock %}>
 
-<script src="/assets/js/vendor/fontfaceobserver.js"></script>
-
-<script>
-    var font = new FontFaceObserver('source_sans_pro');
-        font.load(15000).then(function () {
-        document.documentElement.className += ' fonts-loaded';
-    });
-</script>
-
 {% block body %}{% endblock %} {% block scripts_extra %}{% endblock %}
 
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
 <link href="./dist/css/docs.min.css" rel="stylesheet">
+<link href="./dist/css/fonts.css" rel="stylesheet">
 
 </body>
 
