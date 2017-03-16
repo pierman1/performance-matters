@@ -1,6 +1,14 @@
 # Audit
 
-Ik heb geprobeerd om de huidige bootstrap website zo snel mogelijk te maken. Hiervoor heb ik eerst gekeken naar de snelheid zoals die was. Dit kon nog aanzienlijk verbeterd worden! Hieronder heb ik gedocumenteerd wat ik veranderd heb. Ik heb dit een beetje met terug werkende kracht gedaan, want ik miste hier en daar een screenshot. In het vervolg doe ik dit preciezer!
+Ik heb geprobeerd om de huidige bootstrap website zo snel mogelijk te maken.
+ Hiervoor heb ik eerst gekeken naar de snelheid zoals die was. Dit kon nog aanzienlijk verbeterd worden! Hieronder heb ik gedocumenteerd wat ik veranderd heb. Ik heb dit een beetje met terug werkende kracht gedaan, want ik miste hier en daar een screenshot.
+  In het vervolg doe ik dit preciezer!
+  
+  Kwa braching zou het ook nog wel iets netter kunnen, ik heb nu een branch genaamt 'gulp', deze 
+  bevat dus een aantal optimalisaties die ook in een apparte branches hadden gekunt. 
+  
+  Ik was opnieuw begonnen, maar ik vond dat ik nu echt letterlijk dubbel werk aan het verichten was.
+  In het vervolg is het helemaal top (moest natuurlijk ook nog een beetje van het weer genieten). 
 
 Tested on:  2G connection (150ms, 450kb/s, 150kb/s)
 
@@ -33,6 +41,7 @@ Tested on:  2G connection (150ms, 450kb/s, 150kb/s)
 
 - Load: 6.72s
 - Requests: 14
+
 
 ![alt text](screenshots/3.minified-js.png "Audit")
 
@@ -73,6 +82,7 @@ Page insights: 71/100 mobile, 88/100 mobile
 ![alt text](screenshots/7.page-insights.png)
 
 Al met al is het een stuk sneller geworden! En de score op een goeie internet verbinding is 100/100. Alleen de server response time moet nog omhoog!
+
 
 ## Tools used
 
