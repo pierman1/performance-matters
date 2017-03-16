@@ -1,5 +1,7 @@
 # Audit
 
+Ik heb geprobeerd om de huidige bootstrap website zo snel mogelijk te maken. Hiervoor heb ik eerst gekeken naar de snelheid zoals die was. Dit kon nog aanzienlijk verbeterd worden! Hieronder heb ik gedocumenteerd wat ik veranderd heb. Ik heb dit een beetje met terug werkende kracht gedaan, want ik miste hier en daar een screenshot. In het vervolg doe ik dit preciezer!
+
 Tested on:  2G connection (150ms, 450kb/s, 150kb/s)
 
 ## Before audit:
