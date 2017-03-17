@@ -119,7 +119,7 @@ Hierbij gebruik ik de volgende node-modules:
 
 ### Page insights
 
-![alt text](screenshots/7.page-insights.png)
+![alt text](screenshots/insight2.png)
 
 Al met al is het een stuk sneller geworden! En de score op een goeie internet verbinding (op school) is 100/100. Alleen de server response time moet nog omhoog!
 
