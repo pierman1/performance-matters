@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/global.css">
+</head>
+<body>
+<header class="header">
+    <h1 class="header__logo logo">Amsterdam Strains</h1>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="#strains">Strains</a>
+            </li>
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#search">Search</a>
+            </li>
+            <li>
+                <a href="#favorites">Favorites</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main class="main-container">
+    <div class="loader hidden">
+
+    </div>
+
+    <section id="about">
+        <h2>About Amsterdam Strains</h2>
+
+        <p>Amsterdam Strains is all about the different kindes of Cannabis. Not only in Amsterdam but from around the world!</p>
+    </section>
+
+    <section id="strains">
+        <h2>Strains</h2>
+
+        <button class="strains-list__image-filter next">
+            Show only items with images
+        </button>
+
+        <ul class="strains-list">
+
+            <li class="strains-list__item">
+
+                <a href="" data-bind="strainLink">
+
+                    <p data-bind="strainTitle"></p>
+
+                </a>
+
+            </li>
+
+        </ul>
+        <!--<button class="next">Next</button>-->
+    </section>
+
+    <section id="search">
+        <h2>Search strains</h2>
+
+        <from>
+            <input type="text" name="strain" class="enter"/>
+            <input type="button" value="click"/>
+        </from>
+
+        <ul class="strains-list">
+
+            <li class="strains-list__item">
+
+                <a href="" data-bind="strainLink">
+
+                    <p data-bind="strainTitle"></p>
+
+                </a>
+
+            </li>
+
+        </ul>
+    </section>
+
+    <section id="strain-detail">
+        <h1 data-bind="strainTitle"></h1>
+        <img data-bind="strainImage" src="">
+
+        <div id="heart">❤</div>
+
+    </section>
+
+    <section id="favorites">
+        <object-detailobject-dh2>Favorites</object-detailobject-dh2>
+        <ul class="favorites">
+            <li data-bind="strainTitle"></li>
+        </ul>
+
+    </section>
+
+    <section id="error">
+        <p>Sorry, to much requests to server.</p>
+    </section>
+</main>
+
+<footer class="footer">
+    <p>Made by: Pierre Bleeker</p>
+</footer>
+<script src="js/libs/aja.min.js"></script>
+<script src="js/libs/routie.js"></script>
+<script src="js/libs/transparency.min.js"></script>
+<script src="js/modules/app-modulair.js"></script>
+</body>
+</html>
