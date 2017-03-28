@@ -1,0 +1,14 @@
+<% include ./part/header.ejs%>
+
+<% if(typeof title !== 'undefined'){ %>
+<h1><%= title %></h1>
+<% }else{ %>
+<h2>Dit is gek..</h2>
+<% }; %>
+
+<form action="/results/?strain=value" method="GET">
+    <input type="text" name="strain" class="enter">
+    <input type="submit" value="click">
+</form>
+
+<% include ./part/footer.ejs %>
