@@ -114,11 +114,6 @@ app.get('/results/', function(req, res) {
 
     var searchQuery = req.query.strain;
 
-    // res.render('search', {
-    //     title: 'title'
-    // });
-
-    //Lets try to make a HTTP GET
     request({
 
         url: 'https://www.cannabisreports.com/api/v1.0/strains/search/' + searchQuery,
