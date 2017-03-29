@@ -1,8 +1,9 @@
-var cacheName = 'v1';
+var cacheName = 'v3';
 var cacheFiles = [
+    '/offline/index.html',
     './css/main.css',
-    'http://fonts.googleapis.com/css?family=Slabo+27px|Source+Sans+Pro',
-    'http://fonts.googleapis.com/css?family=Inconsolata'
+    'https://fonts.googleapis.com/css?family=Slabo+27px|Source+Sans+Pro',
+    'https://fonts.googleapis.com/css?family=Inconsolata'
 ];
 
 console.log('sw');
@@ -25,9 +26,26 @@ self.addEventListener('install', function (e) {
 // install event
 self.addEventListener('activate', function (e) {
     console.log("[Service Worker] Installed")
+
+    e.waitUntil(
+
+        caches.keys().then(function (cacheNames) {
+            return Promise.all(cacheNames.map(function(thisCacheName) {
+
+                if (thisCacheName !== cacheName) {
+                    console.log('[Service worker] Removing Cached Files from')
+                    return caches.delete(thisCacheName);
+                }
+
+            }))
+        })
+
+    )
 })
 
-// install event
-self.addEventListener('fetch', function (e) {
-    console.log("[Service Worker] Fetching", e.request.url)
-})
+self.addEventListener('fetch', function(e) {
+    console.log('[ServiceWorker] Fetch', e.request.url);
+
+
+});
+

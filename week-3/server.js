@@ -8,7 +8,7 @@ var compression = require('compression');
 var path 	 = require('path');
 var port	 = 3000;
 
-var loader = require('./public/js/loader.js');
+// var loader = require('./public/js/loader.js');
 
 // gzip using compression
 app.use(compression());
@@ -107,6 +107,7 @@ app.get('/search', function (req, res) {
         title: 'Search'
     });
 });
+
 
 app.get('/results/', function(req, res) {
 
