@@ -1,6 +1,8 @@
 var cacheName = 'v1';
 var cacheFiles = [
-    './css/main.css'
+    './css/main.css',
+    'http://fonts.googleapis.com/css?family=Slabo+27px|Source+Sans+Pro',
+    'http://fonts.googleapis.com/css?family=Inconsolata'
 ];
 
 console.log('sw');
